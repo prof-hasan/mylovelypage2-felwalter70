@@ -145,6 +145,7 @@ main article p {
     background-color: #0D0D0D;
     border-radius: 10px;
     padding: 1em;
+    box-shadow: 0 0 0.4em;
     grid-template-areas: 
         "conceitos disco"
 }
@@ -161,7 +162,6 @@ main article p {
 
 #listaTemas li {
     border: solid 1px #DBDBDB;
-    padding: 4rem 3rem;
     flex: 1 1 0%;
     text-align: center;
     align-content: center;
@@ -175,7 +175,7 @@ main article p {
 }
 
 #TD {
-    margin: 0;
+    margin: 1rem;
     align-self: center;
     position: relative;
     justify-self: center;
@@ -316,7 +316,7 @@ footer {
     margin: 200px 0 10px 0;
 }
 
-.teclaBranca:active {
+.teclaBranca:active, .teclaAtiva {
     background-color: #969696;
     top: 5px;
 }

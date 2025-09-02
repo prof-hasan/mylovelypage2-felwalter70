@@ -33,6 +33,8 @@ const A4s = new Audio('sounds/A4s.wav');
 const B4 = new Audio('sounds/B4.wav');
 const C5 = new Audio('sounds/C5.wav');
 
+
+
 //pega id teclas
 const parentContainer = document.getElementById('piano');
 
@@ -59,9 +61,20 @@ parentContainer.addEventListener('click', function(event) {
     console.log('', nota);
     somNota(nota);
 });
+let teclaAtivaEl = null;
+function desativa(){
+    if(teclaAtivaEl != null){
+        return;
+    }
+    tecla.classList.add("teclaAtiva");
+    teclaAtivaEl = null;
+}
 
 function somNota(nota) {
     console.log('coisa');
+    teclaAtivaEl = document.querySelector('#'+nota);
+    teclaAtivaEl.classList.add("teclaAtiva");
+    setTimeout(desativa, 2000);
     switch(nota) {
         case '1':
             C3.currentTime = 0;
