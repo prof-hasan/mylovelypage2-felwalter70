@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <title>Teoria musical</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <p>Music Theory</p>
+                <button id="navAbrir" onclick="abrirNav()">
+                    <img src="imgs/menu-svgrepo-com.svg" height="40px">
+                </button>
+                <nav id="nav">
+                    <ul>
+                        <li><button id="navFechar" onclick="fecharNav()"><img src="imgs/close-svgrepo-com.svg" height="40px"></button></li>
+                        <li><a href="index.html" class="linkAtual">Home</a></li>
+                        <li><a href="piano.html">Piano</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article class="title">
+                    <h1>Teoria musical</h1>
+                </article>
+                <section id="principal">
+                    <article>
+                        <h2>Sobre o site...</h2>
+                        <p>
+                            Antes de se falar em teoria musical, é interessante que conheça as informações sobre o site e seu objetivo, tais informações podem ser acessadas
+                             ao clicar na aba "About" da barra de navegação ou ao clicar <a href="about.html">aqui.</a>
+                        </p>
+                    </article>
+                    <article>
+                        <h2>O que é?</h2>
+                        <p>
+                            A teoria musical pode ser definida como o instrumento utilizado por músicos no momento de compor algo, quase como um manual de como o instrumento pode ser 
+                            utilizado para criar diversas composições e sua extensão é praticamente infinita, se dividindo em diversos conceitos.
 
+                        </p>
+                    </article>
+                    <article class="destaque">
+                        <h2>Conceitos básicos</h2>
+                        <p>
+                            A quantidade de conceitos dentro da teoria musical é enorme, então, para começar, serão explicados alguns conceitos básicos, sendo eles:
+                        </p>
+                        <div id="listaTemas">
+                            <ul>
+                                <li>
+                                    Som
+                                </li>
+                                <li>
+                                    Escala cromática
+                                </li>
+                                <li>
+                                    Intervalos
+                                </li>
+                                <li>
+                                    Acordes
+                                </li>
+                                <li>
+                                    Campo Harmônico
+                                </li>
+                            </ul>
+                            <div id="TD">
+                                <img src="imgs/TDbase.png" alt="" id="baseDisco">
+                                <img src="imgs/TDdisco.png" alt="" id="disco" onclick="musica()">
+                                <img src="imgs/TDagulha.png" alt="" id="agulha" class="agulhaInativo" onclick="musicaStop()">
+                            </div>
+                        </div>
+                    </article>
+                    <article class="posLP">
+                        <h2 id="som">Som</h2>
+                        <p>O som é uma perturbação de um meio que gera uma onda, possuindo três importantes características ao se falar de música, sendo eles a frequência, a amplitude e o timbre.</p>
+                        <p>A frequência é o quão rápido uma onda sonora oscila, definindo a altura do som, ou seja, define se o som é grave ou agudo.</p>
+                        <div class="exemplos">
+                            <div>
+                                <p>Onda de baixa frequência</p>
+                                <img src="imgs/baixafrequencia.png" alt="">
+                                <button onclick="exemplosSons()"><p class="somOnda" id="25">Som da onda</p></button>
+                            </div>
+                            <div>
+                                <p>Onda de alta frequência</p>
+                                <img src="imgs/altafrequencia.png" alt="">
+                                <button onclick="exemplosSons()"><p class="somOnda" id="26">Som da onda</p></button>
+                            </div>
+                        </div>
+                        <p>A <strong>amplitude</strong> pode ser considerada o "tamanho" da onda sonora, definindo assim o seu volume.</p>
+                        <p>O timbre é o formato de uma onda sonora, o que faz com que ondas com mesma amplitude e frequência possuam sons diferentes, e é isso que, por exemplo, nos permite diferenciar o som de um piano quando comparado ao de um violão.</p>
+                    </article>
+                    <article class="posLP">
+                        <h2>Escala cromática</h2>
+                        <p></p>
+                    </article>
+
+
+                    
+                </section>
+            </main>
+            <div id="coisa">
+
+            </div>
+            <div id="img"></div>
+            <footer>
+                <p>© 2025, teoria musical descomplicada.</p>
+            </footer>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>

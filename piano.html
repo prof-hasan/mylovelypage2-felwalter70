@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <title>Piano online</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <p>Music Theory</p>
+                <button id="navAbrir" onclick="abrirNav()">
+                    <img src="imgs/menu-svgrepo-com.svg" height="40px">
+                </button>
+                <nav id="nav">
+                    <ul>
+                        <li><button id="navFechar" onclick="fecharNav()"><img src="imgs/close-svgrepo-com.svg" height="40px"></button></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="piano.html" class="linkAtual">Piano</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article class="title">
+                    <h1>Piano online</h1>
+                    <h2>Use o teclado ou clique nas teclas</h2>
+                </article>
+                <section id="piano">
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="1">
+                            <p id="1">Dó</p>
+                        </div>
+                        <div class="teclaPreta" id="2">
+                            <p id="2">Dó#</p>
+                        </div>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="3">
+                            <p id="3">Ré</p>
+                        </div>
+                        <div class="teclaPreta" id="4">
+                            <p id="4">Ré#</p>
+                        </div>
+                    </div>
+                    <div class="teclaBranca" id="5">
+                        <p id="5">Mi</p>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="6">
+                            <p id="6">Fá</p>
+                        </div>
+                        <div class="teclaPreta" id="7">
+                            <p id="7">Fá#</p>
+                        </div>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="8">
+                            <p id="8">Sol</p>
+                        </div>
+                        <div class="teclaPreta" id="9">
+                            <p id="9">Sol#</p>
+                        </div>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="10">
+                            <p id="10">Lá</p>
+                        </div>
+                        <div class="teclaPreta" id="11">
+                            <p id="11">Lá#</p>
+                        </div>
+                    </div>
+                    <div class="teclaBranca" id="12">
+                        <p id="12">Si</p>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="13">
+                            <p id="13">Dó</p>
+                        </div>
+                        <div class="teclaPreta" id="14">
+                            <p id="14">Dó#</p>
+                        </div>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="15">
+                            <p id="15">Ré</p>
+                        </div>
+                        <div class="teclaPreta" id="16">
+                            <p id="16">Ré#</p>
+                        </div>
+                    </div>
+                    <div class="teclaBranca" id="17">
+                        <p id="17">Mi</p>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="18">
+                            <p id="18">Fá</p>
+                        </div>
+                        <div class="teclaPreta" id="19">
+                            <p id="19">Fá#</p>
+                        </div>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="20">
+                            <p id="20">Sol</p>
+                        </div>
+                        <div class="teclaPreta" id="21">
+                            <p id="21">Sol#</p>
+                        </div>
+                    </div>
+                    <div class="sustenido">
+                        <div class="teclaBranca" id="22">
+                            <p id="22">Lá</p>
+                        </div>
+                        <div class="teclaPreta" id="23">
+                            <p id="23">Lá#</p>
+                        </div>
+                    </div>
+                    <div class="teclaBranca" id="24">
+                        <p id="24">Si</p>
+                    </div>
+                </section>
+                <section id="calculadoraAcordes">
+                    <h2>Digite uma nota e o tipo de acorde a ser calculado</h2>
+                    <article>
+                        <input type="text" id="inputNota">
+                        <button onclick="calcularAcorde()">Gerar acorde</button>
+                    </article>
+                </section>
+                
+            </main>
+           
+            <div id="img"></div>
+            <footer>
+                <p>© 2025, teoria musical descomplicada.</p>
+            </footer>
+        </div>
+        <script src="script.js" defer></script>
+    </body>
+</html>

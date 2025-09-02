@@ -1,93 +1,456 @@
+/*primeira pagina/geral*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     margin: 0;
     background-color: #242424;
     color: white;
 }
 
+strong {
+    color: #3CB371;
+}
+
 .container {
     position: relative;
     display: grid;
-    min-height: 100vh;
-    min-height: 100dvh;
+    height: clamp(100vh, 100vh, 400vh);
     grid-template-columns: 0.4fr 3fr 1fr 0.4fr;
-    grid-template-rows: 0.8fr 4fr 0.6fr;
+    grid-template-rows: 0.3fr 4fr 0.4fr;
     grid-template-areas:
-        "aside header header img"
-        "aside main main img"
+        "header header header img"
+        "main main main img"
         "footer footer footer footer"
 }
 
-aside {
-    position: fixed;
-    align-self: center;
-    justify-self: center;
-    grid-area: aside;
-    background-color: black;
-    border-radius: 50px;
-}
 
-aside nav {
+header {
+    grid-area: header;
+    background: #0D0D0D;
+    font-family: "Oswald", sans-serif;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 70px;
 }
 
-aside img {
-    height: 50px;
-    width: 50px;
-    padding: 1px;
-    margin: 4px;
-    border-radius: 50px;
+header p {
+    font-size: 1.5rem;
+    align-self: center;
+    margin-right: auto;
+    margin-left: 1em;
 }
 
-aside img:hover {
-    transition: 0.2s;
+header nav {
+    align-self: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header li {
+    display: flex;
+}
+
+header a {
+    font-size: 1.1rem;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.2s ease;
+    padding: 1em 2em;
+}
+
+header a:hover {
     background-color: rgb(255, 255, 255, 0.5);
 }
 
-header {
-    text-align: center;
-    grid-area: header;
+.linkAtual {
+    border-bottom: solid 1px #DBDBDB;
 }
+
+#navAbrir {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#navFechar {
+    display: none;
+    background: none;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+}
+
+
 
 main {
     grid-area: main;
+    font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
-#coisa {
-    grid-area: coisa;
+.title {
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.title h1{
+    font-size: clamp(3rem, 4.3vw, 5rem);
+    font-weight: 500;
+}
+.title h2{
+    font-size: clamp(1.5rem, 1.7vw, 2.5rem);
+    font-weight: 300;
+}
+
+main article {
+    margin: 3em 2em;
+}
+
+main article p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+#principal {
+    font-family: "Inter", sans-serif;
+}
+
+#principal a {
+    color: #DBDBDB;
+}
+
+.destaque h2 {
+    font-size: clamp(1.5rem, 1.7vw, 2.5rem);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.8rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+#listaTemas {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 1rem;
+    background-color: #0D0D0D;
+    border-radius: 10px;
+    padding: 1em;
+    grid-template-areas: 
+        "conceitos disco"
+}
+
+#listaTemas ul {
+    cursor: pointer;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-area: conceitos;
+}
+
+#listaTemas li {
+    border: solid 1px #DBDBDB;
+    padding: 4rem 3rem;
+    flex: 1 1 0%;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    transition: 200ms ease;
+}
+
+#listaTemas li:hover {
+    background-color: #DBDBDB;
+    color: #0D0D0D;
+}
+
+#TD {
+    margin: 0;
+    align-self: center;
+    position: relative;
+    justify-self: center;
+    grid-area: disco;
+}
+
+#baseDisco {
+    height: 18rem;
+}
+
+#disco {
+    position: absolute;
+    height: 14rem;
+    top: 10px;
+    left: 3.5em;
+    animation: rotate 7s linear infinite;
+}
+
+#agulha {
+    position: absolute;
+    top: 1.5em;
+    right: 2em;
+    height: 11rem;
+    transition: 500ms ease-out;
+}
+
+.agulhaAtivo {
+    rotate: 40deg;
+    top: 10px;
+}
+
+.posLP h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 0.5em;
+}
+
+.exemplos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.exemplos div {
+    flex: 1 1 0%;
+}
+
+.exemplos div p {
+    text-align: center;
+}
+
+.exemplos img {
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+}
+
+.exemplos button {
+    display: block;
+    margin: auto;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.somOnda {
+    background-color: #3CB371;
+    padding: 1em 2em;
+    transition: 300ms ease;
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    border-radius: 10px;
+}
+
+.somOnda:hover {
+    background-color: #1DB954;
+    cursor: pointer;
 }
 
 #img {
     background-image: url(imgs/guitarra.jpg);
     grid-area: img;
+    background-size: cover;
     background-repeat: no-repeat;
+    z-index: 7;
 }
 
+
 footer {
-    background: gray;
+    background: #0D0D0D;
     grid-area: footer;
+    text-align: center;
+    align-content: center;
+    border-top: solid 1px #808080;
+    padding: 2.5rem;
+    z-index: 7;
 }
+
+/*SEGUNDA PAGINA/PIANO*/
+
+#piano {
+    justify-self: center;
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+}
+
+#piano::selection {
+    background-color: rgb(0, 0, 0, 0);
+    cursor: auto;
+}
+
+#piano:hover {
+    cursor: pointer;
+}
+
+.sustenido {
+    position: relative;
+}
+
+.teclaBranca {
+    display: flex;
+    position: relative;
+    width: 45px;
+    background-color: white;
+    border: solid 1px #0D0D0D;
+    color: black;
+    justify-content: center;
+    border-radius: 0 0 7px 7px;
+    transition: 200ms ease;
+}
+
+.teclaBranca p {
+    align-self: flex-end;
+    margin: 200px 0 10px 0;
+}
+
+.teclaBranca:active {
+    background-color: #969696;
+    top: 5px;
+}
+
+
+.teclaPreta {
+    position: absolute;
+    background-color: black;
+    z-index: 6;
+    width: 40px;
+    color: white;
+    top: 0px;
+    left: 1.1em;
+    border-radius: 0 0 7px 7px;
+    transition: 200ms ease;
+}
+
+.teclaPreta p {
+    justify-self: center;
+    margin: 100px 0 10px 0;
+}
+
+.teclaPreta:active {
+    background-color: #242424;
+    top: 5px;
+}
+
+
+#calculadoraAcordes {
+    margin-top: 2rem;
+}
+
+#calculadoraAcordes h2 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*media*/
 
 @media only screen and (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.6fr 0.4fr 3fr 1fr 0.4fr 0.6fr;
+        grid-template-rows: 0.4fr auto 0.6fr;
         grid-template-areas: 
             "header"
-            "aside"
-            "main"
             "main"
             "img"
             "footer";
     }
+}
 
-    aside {
-        position: sticky;
+@media screen and (max-width: 570px) {
+    #navAbrir, #navFechar {
+        display: block;
     }
 
-    aside nav {
-        flex-direction: row;
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: min(15em, 100%);
+        z-index: 10;
+        border-left: 1px solid #808080;
+        background-color: #0D0D0D;
+        transition: right 400ms ease-out;
+    }
+
+    nav.display {
+        right: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        padding-left: 2.5em;
+    }
+
+    main article {
+        margin: 3em 0.2em;
+    }
+
+    #TD {
+        margin-top: 3em;
+    }
+
+    #baseDisco {
+    height: 14rem;
+    }
+
+    #disco {
+        height: 11rem;
+        top: 10px;
+        left: 3.5em;
+    }
+
+    #agulha {
+        position: absolute;
+        top: 1.5em;
+        right: 2em;
+        height: 9rem;
+    }
+}
+
+@media only screen and (max-width: 1160px) {
+    #listaTemas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 1fr;
+        grid-template-areas: 
+            "conceitos"
+            "disco"
+    }
+}
+
+@media only screen and (max-width: 590px) {
+    #listaTemas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.6fr;
+        grid-template-areas: 
+            "conceitos"
+            "disco"
+    }
+
+    #altaBaixaF img {
+        height: 125px;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        rotate: 360deg;
     }
 }
