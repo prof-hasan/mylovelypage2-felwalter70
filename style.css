@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -68,6 +69,10 @@ header a {
 
 header a:hover {
     background-color: rgb(255, 255, 255, 0.5);
+}
+
+header div {
+    display: none;
 }
 
 .linkAtual {
@@ -162,7 +167,7 @@ main article p {
 
 #listaTemas li {
     border: solid 1px #DBDBDB;
-    flex: 1 1 0%;
+    flex: 1 1 30%;
     text-align: center;
     align-content: center;
     border-radius: 10px;
@@ -172,6 +177,8 @@ main article p {
 #listaTemas li:hover {
     background-color: #DBDBDB;
     color: #0D0D0D;
+    transform: scale(1.07);
+    box-shadow: 0 0 0.4em #DBDBDB;
 }
 
 #TD {
@@ -256,6 +263,10 @@ main article p {
 .somOnda:hover {
     background-color: #1DB954;
     cursor: pointer;
+}
+
+.somOnda:active {
+    transform: scale(0.95);
 }
 
 #img {
@@ -399,6 +410,17 @@ footer {
         padding-left: 2.5em;
     }
 
+    header div {
+        position: absolute;
+        display: flex;
+        bottom: -6px;
+    }
+
+    header div img {
+        height: 120px;
+    }
+
+
     main article {
         margin: 3em 0.2em;
     }
@@ -422,6 +444,10 @@ footer {
         top: 1.5em;
         right: 2em;
         height: 9rem;
+    }
+
+    .exemplos img {
+        height: 150px;
     }
 }
 

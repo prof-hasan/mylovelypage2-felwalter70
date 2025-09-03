@@ -61,20 +61,9 @@ parentContainer.addEventListener('click', function(event) {
     console.log('', nota);
     somNota(nota);
 });
-let teclaAtivaEl = null;
-function desativa(){
-    if(teclaAtivaEl != null){
-        return;
-    }
-    tecla.classList.add("teclaAtiva");
-    teclaAtivaEl = null;
-}
 
 function somNota(nota) {
     console.log('coisa');
-    teclaAtivaEl = document.querySelector('#'+nota);
-    teclaAtivaEl.classList.add("teclaAtiva");
-    setTimeout(desativa, 2000);
     switch(nota) {
         case '1':
             C3.currentTime = 0;
@@ -196,7 +185,10 @@ function somNota(nota) {
             B4.play();
             break;
 
+        //Outras notas
+
         case '25':
+            C2.volume = 1;
             C2.currentTime = 0;
             C2.play();
             break;
@@ -204,6 +196,18 @@ function somNota(nota) {
         case '26':
             C5.currentTime = 0;
             C5.play();
+            break;
+        
+        case '27':
+            C2.currentTime = 0;
+            C2.volume = 0.5;
+            C2.play();
+            break;
+
+        case '28':
+            C2.currentTime = 0;
+            C2.volume = 1;
+            C2.play();
             break;
     }
 }
