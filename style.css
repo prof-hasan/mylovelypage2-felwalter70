@@ -230,12 +230,35 @@ main article p {
     top: 10px;
 }
 
+.posLP {
+    position: relative;
+}
 
 .posLP h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     border-bottom: 1px solid #DBDBDB;
     margin-bottom: 0.5em;
+}
+
+.posLP button {
+    display: block;
+    margin: auto;
+    background-color: rgb(0, 0, 0, 0);
+    border: none;
+}
+
+.posLP ul {
+    justify-self: center;
+    list-style-type: none;
+}
+
+.posLP ul p {
+    text-align: center;
+}
+
+.posLP ul button {
+    width: 70%;
 }
 
 .exemplos {
@@ -267,7 +290,7 @@ main article p {
     border: none;
 }
 
-.somOnda {
+.somOnda, .acorde p {
     background-color: #3CB371;
     padding: 1em 2em;
     transition: 200ms ease;
@@ -277,12 +300,12 @@ main article p {
     border-radius: 10px;
 }
 
-.somOnda:hover {
+.somOnda:hover, .acorde p:hover {
     background-color: #1DB954;
     cursor: pointer;
 }
 
-.somOnda:active {
+.somOnda:active, .acorde p:active {
     transform: scale(0.95);
 }
 
@@ -338,8 +361,6 @@ main article p {
 .semDestaque {
     opacity: 0.5;
 }
-
-
 
 
 
@@ -455,7 +476,6 @@ footer {
         grid-template-areas: 
             "header"
             "main"
-            "img"
             "footer";
     }
 }

@@ -55,6 +55,8 @@ function fecharNav() {
 //funcionamento piano
 
 let nota = '0';
+let nota2 = '0';
+let nota3 = '0';
 
 parentContainer.addEventListener('click', function(event) {
     let nota = event.target.id;
@@ -336,7 +338,4 @@ links.forEach(link => {
         link.setAttribute('aria-current', 'page');
         link.classList.add('linkAtual');
     }
-
 });
-
-

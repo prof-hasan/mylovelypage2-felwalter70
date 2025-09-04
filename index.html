@@ -39,14 +39,14 @@
                         <h2>Sobre o site...</h2>
                         <p>
                             Antes de se falar em teoria musical, é interessante que conheça as informações sobre o site e seu objetivo, tais informações podem ser acessadas
-                             ao clicar na aba "About" da barra de navegação ou ao clicar <a href="about.html">aqui.</a>
+                             ao clicar na aba "About" da barra de navegação ou ao clicar <a href="about.html"><strong>aqui</strong></a>.
                         </p>
                     </article>
                     <article>
                         <h2>O que é?</h2>
                         <p>
-                            A teoria musical pode ser definida como o instrumento utilizado por músicos no momento de compor algo, quase como um manual de como o instrumento pode ser 
-                            utilizado para criar diversas composições e sua extensão é praticamente infinita, se dividindo em diversos conceitos.
+                            A teoria musical pode ser definida como o instrumento utilizado por músicos no momento de compor algo, quase como um manual de como um instrumento musical pode ser 
+                            utilizado para criar diversas composições, tendo sua extensão praticamente infinita, se dividindo em diversos conceitos.
 
                         </p>
                     </article>
@@ -320,17 +320,151 @@
                     </article>
                     <article class="posLP">
                         <h2 id="acordes">Formação de acordes</h2>
-                        <p></p>
+                        <p>Agora que já se sabe sobre os intervalos, começaremos a falar sobre a formação dos acordes. Acordes são tríades de notas, ou seja a junção do som de três notas, que quando tocadas juntas geram um acorde.</p>
+                        <p>Dentro dos acordes, existem quatro tipos que são base para todos os outros, sendo eles os maiores, menores, diminutos e aumentados. No entanto, não basta apenas fazer tríades para que um acorde seja formado, precisa existir um empilhamento/junção entre intervalos de terças e quintas. Veja a seguir:</p>
+                        <div class="exemplosNotas">
+                            <div onclick="exemplosSons('n1')">
+                                <p>Dó</p>
+                                <p class="numeracaoIntervalo">1ª</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n2')">
+                                <p>Dó#</p>
+                                <p>Réb</p>
+                                <p class="numeracaoIntervalo">2ªm</p>
+                            </div>
+                            <div class="semDestaque" onclick="exemplosSons('n3')">
+                                <p>Ré</p>
+                                <p class="numeracaoIntervalo">2ªM</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n4')">
+                                <p>Ré#</p>
+                                <p>Mib</p>
+                                <p class="numeracaoIntervalo">3ªm</p>
+                            </div>
+                            <div onclick="exemplosSons('n5')">
+                                <p>Mi</p>
+                                <p class="numeracaoIntervalo">3ªM</p>
+                            </div>
+                            <div class="semDestaque" onclick="exemplosSons('n6')">
+                                <p>Fá</p>
+                                <p class="numeracaoIntervalo">4ªJ</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n7')">
+                                <p>Fá#</p>
+                                <p>Solb</p>
+                                <p class="numeracaoIntervalo">5ª°/4ª+</p>
+                            </div>
+                            <div onclick="exemplosSons('n8')">
+                                <p>Sol</p>
+                                <p class="numeracaoIntervalo">5ªJ</p>
+                            </div>      
+                        </div>
+                        <button onclick="exemplosSons('n1'), exemplosSons('n5'), exemplosSons('n8')" class="acorde"><p>Dó maior</p></button>
+                        <p>Como pôde ser observado acima, o acorde de dó maior é formado pelas notas dó, mi e sol, que são a 1ª, a 3ªM e a 5ªJ, respectivamente. Essa fórmula irá funcionar para encontrar o acorde maior de qualquer outra nota, basta contar os intervalos a partir da nota esccolhida para montar o acorde maior. Para os outros tipos de acorde essa fórmula é semelhante, os intervalos para a formação dos 4 acordes básicos e exemplos são:</p>
+                        <ul>
+                            <li>
+                                <p>Acordes <strong>maiores</strong>: <strong>1ª</strong>, <strong>3ªM</strong> e <strong>5ªJ</strong></p>
+                                <button onclick="exemplosSons('n3'), exemplosSons('n7'), exemplosSons('n10')" class="acorde"><p>Ré maior</p></button>
+                            </li>
+                            <li>
+                                <p>Acordes <strong>menores</strong>: <strong>1ª</strong>, <strong>3ªm</strong> e <strong>5ªJ</strong></p>
+                                <button onclick="exemplosSons('n3'), exemplosSons('n6'), exemplosSons('n10')" class="acorde"><p>Ré menor</p></button>
+                            </li>
+                            <li>
+                                <p>Acordes <strong>aumentados</strong>: <strong>1ª</strong>, <strong>3ªM</strong> e <strong>5ª+</strong></p>
+                                <button onclick="exemplosSons('n3'), exemplosSons('n7'), exemplosSons('n11')" class="acorde"><p>Ré aumentado</p></button>
+                            </li>
+                            <li>
+                                <p>Acordes <strong>diminutos</strong>: <strong>1ª</strong>, <strong>3ªm</strong> e <strong>5ª°</strong></p>
+                                <button onclick="exemplosSons('n3'), exemplosSons('n6'), exemplosSons('n9')" class="acorde"><p>Ré diminuto</p></button>
+                            </li>
+                        </ul>
+                        <p>Também é interessante de ser comentado que a nomenclatuda dos acordes é quase igual a dos intervalos, com a única diferença de que não é necessario escrever o M para representar um acorde maior.</p>
                     </article>
                     <article class="posLP">
                         <h2 id="campoHarm">Campo harmônico</h2>
-                        <p></p>
+                        <p>O campo harmônico, por fim, é a maneira harmônica de utilizar os acordes para que todos combinem entre si. Existem dois tipos de campo harmônico, os maiores e os menores, e para formar um, basta escolher uma nota qualquer que será chamada de tom.</p>
+                        <p>Antes de montar o campo harmônico em si, é necessário encontrar a escala da nota escolhida, para enconrtrá-la, basta contar a seguinte distâncias entre as notas: Tom / tom / semitom / tom / tom / tom / semitom. Considerando que um tom é equivalente á duas notas de distância e um semitom equivalente a uma, a escala de dó seria:</p>
+                        <div class="exemplosNotas">
+                            <div onclick="exemplosSons('n1')">
+                                <p>Dó</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n2')">
+                                <p>Dó#</p>
+                                <p>Réb</p>
+                            </div>
+                            <div onclick="exemplosSons('n3')">
+                                <p>Ré</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n4')">
+                                <p>Ré#</p>
+                                <p>Mib</p>
+                            </div>
+                            <div onclick="exemplosSons('n5')">
+                                <p>Mi</p>
+                            </div>
+                            <div onclick="exemplosSons('n6')">
+                                <p>Fá</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n7')">
+                                <p>Fá#</p>
+                                <p>Solb</p>
+                            </div>
+                            <div onclick="exemplosSons('n8')">
+                                <p>Sol</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n9')">
+                                <p>Sol#</p>
+                                <p>Láb</p>
+                            </div>
+                            <div onclick="exemplosSons('n10')">
+                                <p>Lá</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n11')">
+                                <p>Lá#</p>
+                                <p>Sib</p>
+                            </div>
+                            <div onclick="exemplosSons('n12')">
+                                <p>Si</p>
+                            </div>
+                            <div onclick="exemplosSons('n13')">
+                                <p>Dó</p>
+                            </div>
+                        </div>
+                        <p>Depois de encontrada a escala, para transformá-la em um campo harmônico maior basta transformar cada nota da mesma em acordes seguindo o modelo de campo harmônico maior: I IIm IIIm IV V VIm VII°. Seguindo com o exemplo do dó, seu campo harmônico seria o seginte:</p>
+                        <div class="exemplosNotas">
+                            <div onclick="exemplosSons('n1'), exemplosSons('n5'), exemplosSons('n8')">
+                                <p>Dó</p>
+                                <p class="numeracaoIntervalo">I</p>
+                            </div>
+                            <div onclick="exemplosSons('n3'), exemplosSons('n6'), exemplosSons('n10')">
+                                <p>Rém</p>
+                                <p class="numeracaoIntervalo">IIm</p>
+                            </div>
+                            <div onclick="exemplosSons('n5'), exemplosSons('n8'), exemplosSons('n12')">
+                                <p>Mim</p>
+                                <p class="numeracaoIntervalo">IIIm</p>
+                            </div>
+                            <div onclick="exemplosSons('n6'), exemplosSons('n10'), exemplosSons('n13')">
+                                <p>Fá</p>
+                                <p class="numeracaoIntervalo">IV</p>
+                            </div>
+                            <div onclick="exemplosSons('n8'), exemplosSons('n12'), exemplosSons('n15')">
+                                <p>Sol</p>
+                                <p class="numeracaoIntervalo">V</p>
+                            </div>
+                            <div onclick="exemplosSons('n10'), exemplosSons('n13'), exemplosSons('n17')">
+                                <p>Lám</p>
+                                <p class="numeracaoIntervalo">VIm</p>
+                            </div>
+                            <div onclick="exemplosSons('n12'), exemplosSons('n15'), exemplosSons('n18')">
+                                <p>Si°</p>
+                                <p class="numeracaoIntervalo">VII°</p>
+                            </div>
+                        </div>
                     </article>
                 </section>
             </main>
-            <div id="coisa">
-
-            </div>
             <div id="img"></div>
             <footer>
                 <p>© 2025, teoria musical descomplicada.</p>
