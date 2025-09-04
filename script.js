@@ -42,7 +42,7 @@ const parentContainer = document.getElementById('piano');
 const disco = document.getElementById('disco');
 const agulha = document.getElementById('agulha');
 
-const LP = new Audio('sounds/faint.m4a');
+const LP = new Audio('sounds/Faint.m4a');
 
 function abrirNav() {
     nav.classList.add('display');
@@ -338,4 +338,5 @@ links.forEach(link => {
     }
 
 });
+
 
