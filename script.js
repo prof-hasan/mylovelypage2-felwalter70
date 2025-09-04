@@ -297,7 +297,7 @@ function musica() {
     agulha.classList.add('agulhaAtivo');
     agulha.style.top = '-0.5em';
     agulha.style.right = '4.7em';
-    LP.volume = 0.1;
+    LP.volume = 0.5;
     LP.play();
 }
 
@@ -336,4 +336,5 @@ links.forEach(link => {
         link.setAttribute('aria-current', 'page');
         link.classList.add('linkAtual');
     }
+
 });
