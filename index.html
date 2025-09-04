@@ -88,12 +88,12 @@
                             <div>
                                 <p>Onda de <strong>baixa</strong> <em>frequência</em></p>
                                 <img src="imgs/baixafrequencia.png" alt="">
-                                <button onclick="exemplosSons('25')"><p class="somOnda">Som da onda</p></button>
+                                <button onclick="exemplosSons('n25')"><p class="somOnda">Som da onda</p></button>
                             </div>
                             <div>
                                 <p>Onda de <strong>alta</strong> <em>frequência</em></p>
                                 <img src="imgs/altafrequencia.png" alt="">
-                                <button onclick="exemplosSons('26')"><p class="somOnda">Som da onda</p></button>
+                                <button onclick="exemplosSons('n26')"><p class="somOnda">Som da onda</p></button>
                             </div>
                         </div>
                         <p>A <strong>amplitude</strong> pode ser considerada o "tamanho" da onda sonora, definindo assim o seu <strong>volume</strong>.</p>
@@ -101,12 +101,12 @@
                             <div>
                                 <p>Onda de <strong>baixa</strong> <em>amplitude</em></p>
                                 <img src="imgs/baixaamplitude.png" alt="">
-                                <button onclick="exemplosSons('27')"><p class="somOnda">Som da onda</p></button>
+                                <button onclick="exemplosSons('n27')"><p class="somOnda">Som da onda</p></button>
                             </div>
                             <div>
                                 <p>Onda de <strong>alta</strong> <em>amplitude</em></p>
                                 <img src="imgs/altaamplitude.png" alt="">
-                                <button onclick="exemplosSons('28')"><p class="somOnda">Som da onda</p></button>
+                                <button onclick="exemplosSons('n28')"><p class="somOnda">Som da onda</p></button>
                             </div>
                         </div>
                         <p>O <strong>timbre</strong> é o formato de uma onda sonora, o que faz com que ondas com mesma amplitude e frequência possuam <strong>sons diferentes</strong>, e é isso que, por exemplo, nos 
@@ -116,51 +116,47 @@
                         <h2 id="escalaCrom">Escala cromática</h2>
                         <p>A escala cromática é o conjunto das 12 notas que utilizamos no nosso sistema de música baseado na afinação de 440hz (Afinação baseada na nota Lá4), as notas são definidas a partir de proporções matemáticas e possuem distâncias iguais entre as notas. As notas presentes na escala são:</p>
                         <div class="exemplosNotas">
-                            <div onclick="exemplosSons('1')">
+                            <div onclick="exemplosSons('n1')">
                                 <p>Dó</p>
                             </div>
-                            <div class="sustenidoExemplo" onclick="exemplosSons('2')">
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n2')">
                                 <p>Dó#</p>
                                 <p>Réb</p>
                             </div>
-                            <div onclick="exemplosSons('3')">
+                            <div onclick="exemplosSons('n3')">
                                 <p>Ré</p>
                             </div>
-                            <div class="sustenidoExemplo" onclick="exemplosSons('4')">
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n4')">
                                 <p>Ré#</p>
                                 <p>Mib</p>
                             </div>
-                            <div onclick="exemplosSons('5')">
+                            <div onclick="exemplosSons('n5')">
                                 <p>Mi</p>
                             </div>
-                            <div onclick="exemplosSons('6')">
+                            <div onclick="exemplosSons('n6')">
                                 <p>Fá</p>
                             </div>
-                            <div class="sustenidoExemplo" onclick="exemplosSons('7')">
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n7')">
                                 <p>Fá#</p>
                                 <p>Solb</p>
                             </div>
-                            <div onclick="exemplosSons('8')">
+                            <div onclick="exemplosSons('n8')">
                                 <p>Sol</p>
                             </div>
-                            <div class="sustenidoExemplo" onclick="exemplosSons('9')">
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n9')">
                                 <p>Sol#</p>
                                 <p>Láb</p>
                             </div>
-                            <div onclick="exemplosSons('10')">
+                            <div onclick="exemplosSons('n10')">
                                 <p>Lá</p>
                             </div>
-                            <div class="sustenidoExemplo" onclick="exemplosSons('11')">
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n11')">
                                 <p>Lá#</p>
                                 <p>Sib</p>
                             </div>
-                            <div onclick="exemplosSons('12')">
+                            <div onclick="exemplosSons('n12')">
                                 <p>Si</p>
                             </div>
-                            <div onclick="exemplosSons('13')">
-                                <p>Dó</p>
-                            </div>
-                            
                         </div>
                         <p>Como pode ser observado, existem, além das 7 notas usuais, notas com um # ou um b que são chamadas de sustenido e bemol, respectivamente. As notas sustenidas e bemóis entre duas notas adjascentes acabam por possuir o mesmo som, ou seja, um dó sustenido (Dó#) vai possuir o mesmo som/frequência que um ré bemol (Réb).</p>
                         <p>Também é interessante ressaltar que não existem notas sustenidas ou bemóis de mi para fá e de si para dó, já que o equivalente de mi sustenido seria a nota fá e o equivalente da nota fá bemol seria a nota mi, a mesma coisa para dó e si.</p>
@@ -170,31 +166,157 @@
                         <p>Os intervalos são as distâncias entre as notas musicais, assim como conseguimos medir a distância entre dois pontos em metros por exemplo, também conseguimos medir a distância entre duas notas.</p>
                         <p>Para essa medição, basta contarmos a distância entre a própria nota e a outra nota, ignorando as sustenidas/bemóis, por exemplo:</p>
                         <div class="exemplosNotas">
-                            <div onclick="exemplosSons('1')">
+                            <div onclick="exemplosSons('n1')">
                                 <p>Dó</p>
-                                <p class="numeracaoIntervalo">1a</p>
+                                <p class="numeracaoIntervalo">1ª</p>
                             </div>
-                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('2')">
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n2')">
                                 <p>Dó#</p>
                                 <p>Réb</p>
-                                <p class="numeracaoIntervalo">2a</p>
                             </div>
-                            <div class="semDestaque" onclick="exemplosSons('3')">
+                            <div class="semDestaque" onclick="exemplosSons('n3')">
                                 <p>Ré</p>
-                                <p class="numeracaoIntervalo">2a</p>
+                                <p class="numeracaoIntervalo">2ª</p>
                             </div>
-                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('4')">
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n4')">
                                 <p>Ré#</p>
                                 <p>Mib</p>
-                                <p class="numeracaoIntervalo">3a</p>
                             </div>
-                            <div onclick="exemplosSons('5')">
+                            <div onclick="exemplosSons('n5')">
                                 <p>Mi</p>
-                                <p class="numeracaoIntervalo">3a</p>
+                                <p class="numeracaoIntervalo">3ª</p>
                             </div>
                         </div>
                         <p>Os intervalos recebem o nome de primeira, segunda, terça, quarta, quinta, sexta(...), e assim por diante, assim como no exemplo acima, que representa um intervalo de terça, além disso, os intervalos de 1a, 2a, 3a, 6a, 7a e 8a podem receber a classificação de maiores ou menores e os intervalos de 4a e 5a podem ser justos, diminutos ou aumentados.</p>
-                        <p>No caso dos intervalos maiores e menores, os menores serão aqueles que representam a menor distância possível entre duas notas, já os maiores, sempre estarão meio tom à frente do intervalo menor, ou seja, estarão uma tecla à frente.</p>
+                        <p>No caso dos intervalos maiores e menores, os menores serão aqueles que representam a menor distância possível entre duas notas, já os maiores, sempre estarão meio tom à frente do intervalo menor, ou seja, estarão uma nota à frente, sendo representados por m e M (menor e maior, respectivamente):</p>
+                        <div class="exemplosNotas">
+                            <div onclick="exemplosSons('n1')">
+                                <p>Dó</p>
+                                <p class="numeracaoIntervalo">1ª</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n2')">
+                                <p>Dó#</p>
+                                <p>Réb</p>
+                                <p class="numeracaoIntervalo">2ªm</p>
+                            </div>
+                            <div onclick="exemplosSons('n3')">
+                                <p>Ré</p>
+                                <p class="numeracaoIntervalo">2ªM</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n4')">
+                                <p>Ré#</p>
+                                <p>Mib</p>
+                                <p class="numeracaoIntervalo">3ªm</p>
+                            </div>
+                            <div onclick="exemplosSons('n5')">
+                                <p>Mi</p>
+                                <p class="numeracaoIntervalo">3ªM</p>
+                            </div>
+                        </div>
+                        <p>Já para os intervalos justos, aumentados e diminutos, os justos serão a 4ª e 5ª nota a partir da primeira, e podem ser encontrados ao contar 4 e 5 notas a partir da nota inicial, o intervalo diminuto estará uma nota atrás do intervalo justo e o aumentado uma nota á frente, sendo representados por J, ° e + (Justo, diminuto e aumentado, respectivamente).</p>
+                        <div class="exemplosNotas">
+                            <div onclick="exemplosSons('n1')">
+                                <p>Dó</p>
+                                <p class="numeracaoIntervalo">1ª</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n2')">
+                                <p>Dó#</p>
+                                <p>Réb</p>
+                                <p class="numeracaoIntervalo">2ªm</p>
+                            </div>
+                            <div class="semDestaque" onclick="exemplosSons('n3')">
+                                <p>Ré</p>
+                                <p class="numeracaoIntervalo">2ªM</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n4')">
+                                <p>Ré#</p>
+                                <p>Mib</p>
+                                <p class="numeracaoIntervalo">3ªm</p>
+                            </div>
+                            <div class="semDestaque" onclick="exemplosSons('n5')">
+                                <p>Mi</p>
+                                <p class="numeracaoIntervalo">3ªM</p>
+                            </div>
+                            <div onclick="exemplosSons('n6')">
+                                <p>Fá</p>
+                                <p class="numeracaoIntervalo">4ªJ</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n7')">
+                                <p>Fá#</p>
+                                <p>Solb</p>
+                                <p class="numeracaoIntervalo">5ª°/4ª+</p>
+                            </div>
+                            <div onclick="exemplosSons('n8')">
+                                <p>Sol</p>
+                                <p class="numeracaoIntervalo">5ªJ</p>
+                            </div>
+                            <div class="semDestaque" class="sustenidoExemplo" onclick="exemplosSons('n9')">
+                                <p>Sol#</p>
+                                <p>Láb</p>
+                                <p class="numeracaoIntervalo">6ªm</p>
+                            </div>
+                        </div>
+                        <p>Vale ressaltar que os intervalos de 4ª° e 5ª+ são equivalentes aos intervalos de 3ªM e 6ªm, respectivamente.</p>
+                        <p>No final, usando a escala cromática como referência, esses seriam todos os intervalos presentes entre a 1ª e a 8ª nota, partindo de dó:</p>
+                        <div class="exemplosNotas">
+                            <div onclick="exemplosSons('n1')">
+                                <p>Dó</p>
+                                <p class="numeracaoIntervalo">1ª</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n2')">
+                                <p>Dó#</p>
+                                <p>Réb</p>
+                                <p class="numeracaoIntervalo">2ªm</p>
+                            </div>
+                            <div onclick="exemplosSons('n3')">
+                                <p>Ré</p>
+                                <p class="numeracaoIntervalo">2ªM</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n4')">
+                                <p>Ré#</p>
+                                <p>Mib</p>
+                                <p class="numeracaoIntervalo">3ªm</p>
+                            </div>
+                            <div onclick="exemplosSons('n5')">
+                                <p>Mi</p>
+                                <p class="numeracaoIntervalo">3ªM</p>
+                            </div>
+                            <div onclick="exemplosSons('n6')">
+                                <p>Fá</p>
+                                <p class="numeracaoIntervalo">4ªJ</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n7')">
+                                <p>Fá#</p>
+                                <p>Solb</p>
+                                <p class="numeracaoIntervalo">5ª°/4ª+</p>
+                            </div>
+                            <div onclick="exemplosSons('n8')">
+                                <p>Sol</p>
+                                <p class="numeracaoIntervalo">5ªJ</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n9')">
+                                <p>Sol#</p>
+                                <p>Láb</p>
+                                <p class="numeracaoIntervalo">6ªm</p>
+                            </div>
+                            <div onclick="exemplosSons('n10')">
+                                <p>Lá</p>
+                                <p class="numeracaoIntervalo">6ªM</p>
+                            </div>
+                            <div class="sustenidoExemplo" onclick="exemplosSons('n11')">
+                                <p>Lá#</p>
+                                <p>Sib</p>
+                                <p class="numeracaoIntervalo">7ªm</p>
+                            </div>
+                            <div onclick="exemplosSons('n12')">
+                                <p>Si</p>
+                                <p class="numeracaoIntervalo">7ªM</p>
+                            </div>
+                            <div onclick="exemplosSons('n13')">
+                                <p>Dó</p>
+                                <p class="numeracaoIntervalo">8ª</p>
+                            </div>
+                        </div>
                     </article>
                     <article class="posLP">
                         <h2 id="acordes">Formação de acordes</h2>

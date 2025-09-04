@@ -65,146 +65,146 @@ parentContainer.addEventListener('click', function(event) {
 function somNota(nota) {
     console.log('coisa');
     switch(nota) {
-        case '1':
+        case 'n1':
             C3.currentTime = 0;
             C3.play();
             break;
         
-        case '2':
+        case 'n2':
             C3s.currentTime = 0;
             C3s.play();
             break;
         
-        case '3':
+        case 'n3':
             D3.currentTime = 0;
             D3.play();
             break;
         
-        case '4':
+        case 'n4':
             D3s.currentTime = 0;
             D3s.play();
             break;
 
-        case '5':
+        case 'n5':
             E3.currentTime = 0;
             E3.play();
             break;
         
-        case '6':
+        case 'n6':
             F3.currentTime = 0;
             F3.play();
             break;
 
-        case '7':
+        case 'n7':
             F3s.currentTime = 0;
             F3s.play();
             break;
         
-        case '8':
+        case 'n8':
             G3.currentTime = 0;
             G3.play();
             break;
         
-        case '9':
+        case 'n9':
             G3s.currentTime = 0;
             G3s.play();
             break;
         
-        case '10':
+        case 'n10':
             A3.currentTime = 0;
             A3.play();
             break;
         
-        case '11':
+        case 'n11':
             A3s.currentTime = 0;
             A3s.play();
             break;
 
-        case '12':
+        case 'n12':
             B3.currentTime = 0;
             B3.play();
             break;
         
-        case '13':
+        case 'n13':
             C4.currentTime = 0;
             C4.play();
             break;
         
-        case '14':
+        case 'n14':
             C4s.currentTime = 0;
             C4s.play();
             break;
         
-        case '15':
+        case 'n15':
             D4.currentTime = 0;
             D4.play();
             break;
         
-        case '16':
+        case 'n16':
             D4s.currentTime = 0;
             D4s.play();
             break;
 
-        case '17':
+        case 'n17':
             E4.currentTime = 0;
             E4.play();
             break;
         
-        case '18':
+        case 'n18':
             F4.currentTime = 0;
             F4.play();
             break;
 
-        case '19':
+        case 'n19':
             F4s.currentTime = 0;
             F4s.play();
             break;
         
-        case '20':
+        case 'n20':
             G4.currentTime = 0;
             G4.play();
             break;
         
-           case '21':
+           case 'n21':
             G4s.currentTime = 0;
             G4s.play();
             break;
         
-        case '22':
+        case 'n22':
             A4.currentTime = 0;
             A4.play();
             break;
         
-        case '23':
+        case 'n23':
             A4s.currentTime = 0;
             A4s.play();
             break;
 
-        case '24':
+        case 'n24':
             B4.currentTime = 0;
             B4.play();
             break;
 
         //Outras notas
 
-        case '25':
+        case 'n25':
             C2.volume = 1;
             C2.currentTime = 0;
             C2.play();
             break;
 
-        case '26':
+        case 'n26':
             C5.currentTime = 0;
             C5.play();
             break;
         
-        case '27':
+        case 'n27':
             C2.currentTime = 0;
             C2.volume = 0.5;
             C2.play();
             break;
 
-        case '28':
+        case 'n28':
             C2.currentTime = 0;
             C2.volume = 1;
             C2.play();
@@ -214,76 +214,76 @@ function somNota(nota) {
 
 document.addEventListener('keydown', function(event) {
         if (event.key === 'z') {
-            nota = '1';
+            nota = 'n1';
             console.log('coisa: ', nota);
             somNota(nota);
         }
         if (event.key === 's') {
-            nota = '2';
+            nota = 'n2';
             somNota(nota);
         }
         if (event.key === 'x') {
-            nota = '3';
+            nota = 'n3';
             somNota(nota);
         }
         if (event.key === 'd') {
-            nota = '4';
+            nota = 'n4';
             somNota(nota);
         }
         if (event.key === 'c') {
-            nota = '5';
+            nota = 'n5';
             somNota(nota);
         }
         if (event.key === 'v') {
-            nota = '6';
+            nota = 'n6';
             somNota(nota);
         }
         if (event.key === 'g') {
-            nota = '7';
+            nota = 'n7';
             somNota(nota);
         }
         if (event.key === 'b') {
-            nota = '8';
+            nota = 'n8';
             somNota(nota);
         }
         if (event.key === 'h') {
-            nota = '9';
+            nota = 'n9';
             somNota(nota);
         }
         if (event.key === 'n') {
-            nota = '10';
+            nota = 'n10';
             somNota(nota);
         }
         if (event.key === 'j') {
-            nota = '11';
+            nota = 'n11';
             somNota(nota);
         }
         if (event.key === 'm') {
-            nota = '12';
+            nota = 'n12';
             somNota(nota);
         }
         if (event.key === ',') {
-            nota = '13';
+            nota = 'n13';
             somNota(nota);
         }
         if (event.key === 'l') {
-            nota = '14';
+            nota = 'n14';
             somNota(nota);
         }
         if (event.key === '.') {
-            nota = '15';
+            nota = 'n15';
             somNota(nota);
         }
         if (event.key === 'ç') {
-            nota = '16';
+            nota = 'n16';
             somNota(nota);
         }
         if (event.key === ';') {
-            nota = '17';
+            nota = 'n17';
             somNota(nota);
         }
         if (event.key === ']') {
-            nota = '18';
+            nota = 'n18';
             somNota(nota);
         }
         
@@ -297,7 +297,7 @@ function musica() {
     agulha.classList.add('agulhaAtivo');
     agulha.style.top = '-0.5em';
     agulha.style.right = '4.7em';
-    LP.volume = 0.5;
+    LP.volume = 0.1;
     LP.play();
 }
 
@@ -336,5 +336,4 @@ links.forEach(link => {
         link.setAttribute('aria-current', 'page');
         link.classList.add('linkAtual');
     }
-
 });
