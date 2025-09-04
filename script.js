@@ -312,7 +312,6 @@ function musicaStop() {
 //exemplos sons
 
 function exemplosSons(nota) {
-    nota = event.target.id;
     console.log('', nota);
     somNota(nota);
 }

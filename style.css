@@ -124,7 +124,7 @@ main article {
 
 main article p {
     text-align: justify;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
 }
 
 #principal {
@@ -230,6 +230,7 @@ main article p {
     top: 10px;
 }
 
+
 .posLP h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -269,7 +270,7 @@ main article p {
 .somOnda {
     background-color: #3CB371;
     padding: 1em 2em;
-    transition: 300ms ease;
+    transition: 200ms ease;
     font-family: "Inter", sans-serif;
     color: white;
     font-size: clamp(1rem, 1.2vw, 2rem);
@@ -284,6 +285,63 @@ main article p {
 .somOnda:active {
     transform: scale(0.95);
 }
+
+
+.exemplosNotas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.exemplosNotas div {
+    background-color: #3CB371;
+    width: 5rem;
+    height: 5rem;
+    align-content: center;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+
+    box-shadow: 0 0 0.1em #DBDBDB;
+}
+
+.exemplosNotas div:hover {
+    cursor: pointer;
+    background-color: #1DB954;
+    opacity: 1;
+}
+
+.exemplosNotas p {
+    text-align: center;
+    margin: 0;
+}
+
+.numeracaoIntervalo {
+    position: absolute;
+    justify-self: center;
+    bottom: -1.5em;
+}
+
+.sustenidoExemplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sustenidoExemplo .numeracaoIntervalo {
+    align-self: center;
+    bottom: -1.52em; 
+}
+
+.semDestaque {
+    opacity: 0.7;
+}
+
+
+
+
 
 #img {
     background-image: url(imgs/guitarra.jpg);
