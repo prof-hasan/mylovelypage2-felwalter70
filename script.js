@@ -55,17 +55,13 @@ function fecharNav() {
 //funcionamento piano
 
 let nota = '0';
-let nota2 = '0';
-let nota3 = '0';
 
 parentContainer.addEventListener('click', function(event) {
     let nota = event.target.id;
-    console.log('', nota);
     somNota(nota);
 });
 
 function somNota(nota) {
-    console.log('coisa');
     switch(nota) {
         case 'n1':
             C3.currentTime = 0;
@@ -217,7 +213,6 @@ function somNota(nota) {
 document.addEventListener('keydown', function(event) {
         if (event.key === 'z') {
             nota = 'n1';
-            console.log('coisa: ', nota);
             somNota(nota);
         }
         if (event.key === 's') {
@@ -314,21 +309,7 @@ function musicaStop() {
 //exemplos sons
 
 function exemplosSons(nota) {
-    console.log('', nota);
     somNota(nota);
-}
-
-//calculadora de acorde
-
-function calcularAcorde() {
-    let acorde = document.getElementById("inputNota").value;
-    console.log('', acorde);
-}
-
-//calculadora Campo harmônico
-
-function calcularCampo() {
-
 }
 
 //UX

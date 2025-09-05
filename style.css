@@ -104,7 +104,7 @@ main {
 }
 
 .title {
-    margin: 10px;
+    margin: 0 0 10px 0;
     font-family: "Montserrat", sans-serif;
     text-align: center;
 }
@@ -127,11 +127,10 @@ main article p {
     margin-bottom: 1.5em;
 }
 
-#principal {
+.principal {
     font-family: "Inter", sans-serif;
 }
-
-#principal a {
+.principal a {
     color: #DBDBDB;
 }
 
@@ -391,6 +390,7 @@ footer {
     background-color: aliceblue;
     padding: 10px;
     display: flex;
+    margin-bottom: 2em;
 }
 
 #piano::selection {
@@ -457,14 +457,70 @@ footer {
     top: 5px;
 }
 
-
-#calculadoraAcordes {
-    margin-top: 2rem;
+#controlesPiano h2 {
+    font-size: clamp(1.8rem, 2vw, 2.8rem);
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    justify-self: center;
+    margin-bottom: 0.5em;
 }
 
-#calculadoraAcordes h2 {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
+#controlesPiano {
+    margin-bottom: 2em;
+}
+
+#controlesPiano article {
+    background-color: #0D0D0D;
+    margin: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+    border: solid 1px #DBDBDB;
+}
+
+#controlesPiano ul {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style-type: none;
+    height: 350px;
+    align-items: center;
+}
+
+#controlesPiano p {
+    margin: 0;
+}
+
+
+
+/*terceira página/about*/
+
+.imgsHazard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-bottom: 2.5rem;
+}
+
+.imgsHazard li {
+    flex: 1 1 0%;
+    height: 1fr;
+    border: solid 1px #DBDBDB;
+    border-radius: 10px;
+    box-shadow: 0 0 0.2em #DBDBDB;
+}
+
+.imgsHazard img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#creditos {
+    list-style-type: none;
 }
 
 /*media*/
@@ -478,6 +534,15 @@ footer {
             "main"
             "footer";
     }
+
+    .imgsHazard li {
+        flex: 1 1 100%;
+    }
+
+    #controlesPiano article {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 }
 
 @media only screen and (max-width: 700px) {
